@@ -1,0 +1,31 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "sourceMap": true,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": [
+        "./*",
+      ],
+      "@/*": [
+        "./*",
+      ],
+    },
+    "types": [
+      "@types/node",
+      "@types/express",
+      "@types/jest",
+    ],
+  },
+  "include": [
+    "./src/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "lib"
+  ],
+}
